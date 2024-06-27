@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Mi Portafolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Sobre Mí</h2>
+        <div class="about-container">
+            <img src="20230814_101322_508.jpg" alt="Tu Foto" class="profile-photo">
+            <div class="about-text">
+                <h3>Javier Quiroga</h3>
+                <p>
+                    Soy estudiante de la tecnicatura de programación en la Universidad Tecnológica Nacional (UTN). Mi pasión por la tecnología y la programación me ha llevado a desarrollar habilidades y conocimientos en este campo, preparándome para enfrentar los desafíos del mundo digital.
+                </p>
+                <p>
+                    Además de mi formación en programación, cuento con títulos de electricista y operador ejecutivo, lo que me brinda una perspectiva amplia y diversa en el ámbito técnico.
+                </p>
+                <p>
+                    En mi tiempo libre, disfruto de varios hobbies que me ayudan a equilibrar mi vida profesional y personal. Me gusta ir al gimnasio, lo que me permite mantenerme en forma y liberar el estrés. También toco la guitarra, una actividad que me apasiona y me permite expresar mi creatividad. Además, soy un entusiasta de los videojuegos, lo que me permite explorar nuevos mundos y desafíos.
+                </p>
+                <p>
+                    Mi objetivo es seguir creciendo en el campo de la programación y aplicar mis conocimientos y habilidades para contribuir a proyectos innovadores y desafiantes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form id="contact-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Javier Quiroga. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
