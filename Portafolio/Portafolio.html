@@ -9,26 +9,28 @@
 </head>
 <body>
     <header>
-        <h1>Mi Portafolio</h1>
+        <h1>Javier Quiroga</h1>
         <nav>
             <ul>
                 <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#education">Educación</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about">
-        <h2>Sobre Mí</h2>
-        <div class="about-container">
-            <img src="20230814_101322_508.jpg" alt="Tu Foto" class="profile-photo">
-            <div class="about-text">
-                <h3>Javier Quiroga</h3>
+    <section id="about" class="section about">
+        <div class="container">
+            <img src="IMG-20221225-WA0006.jpg" alt="Tu Foto" class="profile-photo">
+            <div class="text">
+                <h2>Sobre Mí</h2>
                 <p>
-                    Soy estudiante de la tecnicatura de programación en la Universidad Tecnológica Nacional (UTN). Mi pasión por la tecnología y la programación me ha llevado a desarrollar habilidades y conocimientos en este campo, preparándome para enfrentar los desafíos del mundo digital.
+                    Soy estudiante de la tecnicatura de programación en la Universidad Tecnológica Nacional (UTN). Mi pasión por la tecnología y la programación me ha llevado a desarrollar habilidades y conocimientos en este campo.
                 </p>
                 <p>
-                    Además de mi formación en programación, cuento con títulos de electricista y operador ejecutivo, lo que me brinda una perspectiva amplia y diversa en el ámbito técnico.
+                    Además de mi formación en programación, cuento con títulos de electricista y operador ejecutivo, así como un título de b2 en inglés. También fui estudiante de ingeniería electrónica durante 2 años, lo que me proporcionó un profundo conocimiento en el servicio técnico y reparación de componentes electrónicos.
                 </p>
                 <p>
                     En mi tiempo libre, disfruto de varios hobbies que me ayudan a equilibrar mi vida profesional y personal. Me gusta ir al gimnasio, lo que me permite mantenerme en forma y liberar el estrés. También toco la guitarra, una actividad que me apasiona y me permite expresar mi creatividad. Además, soy un entusiasta de los videojuegos, lo que me permite explorar nuevos mundos y desafíos.
@@ -40,23 +42,67 @@
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contacto</h2>
-        <form id="contact-form">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <ul class="skills-list">
+                <li>Programación en JavaScript, Python, y Java</li>
+                <li>Conocimientos en electricidad y sistemas electrónicos</li>
+                <li>Servicio técnico y reparación de componentes electrónicos</li>
+                <li>Habilidades de liderazgo y trabajo en equipo</li>
+                <li>Nivel b2 en inglés</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2>Experiencia</h2>
+            <div class="experience-item">
+                <p>Desarrollo y mantenimiento de aplicaciones web utilizando tecnologías modernas.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Electricista </h3>
+                <p>Enero 2020 - Mayo 2021</p>
+                <p>Instalación y mantenimiento de sistemas eléctricos en diversos proyectos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section education">
+        <div class="container">
+            <h2>Educación</h2>
+            <div class="education-item">
+                <h3>Técnico en Programación - Universidad Tecnológica Nacional</h3>
+                <p>2024 - Presente</p>
+            </div>   
+            <div class="education-item">
+                <h3>Ingeniería Industrial - UTN </h3>
+                <p>2021 - 2023</p>
+            </div>
+            <div class="education-item">
+                <h3>Ingeniería Electrónica - Universidad De Mendoza </h3>
+                <p>2019 - 2020</p>
+            </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form id="contact-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </section>
 
     <footer>
         <p>&copy; 2024 Javier Quiroga. Todos los derechos reservados.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
