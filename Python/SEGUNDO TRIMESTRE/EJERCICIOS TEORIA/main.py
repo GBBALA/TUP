@@ -49,3 +49,24 @@ print(nombres)
 # Eliminar un indice especifico
 del nombres[2]
 print(nombres)
+
+# TUPLAS
+cocina = ('cuchara', 'cuchillo', 'tenedor')
+print (cocina [0])
+# mostrar de manera inversa
+print(cocina[-1])
+# Acceder a un rango 
+print(cocina[0:2])
+
+# Ejemplo
+verduras = ('Papa', )  # Una tupla necesita aunque sea de un elemento: la coma
+# de lo contrario solo seria un tipo de str cadena
+
+# Recorremos los elementos de la tupla
+for cocinar in cocina: # Print esta usando \n para saltos de líneas
+    print(cocinar, end= ' ') # Usamos end= para eliminar los saltos de linea
+
+cocinaLista= list(cocina)
+cocinaLista[0] = 'Plato'
+cocina = tuple(cocinaLista)
+print('\n', cocina)
