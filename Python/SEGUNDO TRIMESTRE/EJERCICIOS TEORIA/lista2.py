@@ -1,14 +1,7 @@
 # lista = Ariel, Liliana, Natalia, Osvaldo
 
 nombres = ['Naty','Osvaldo','Lily', 'Ariel']  
-print (nombres)  
-# dentro de una lista pueden haber distintos datos strings, logicos, numericos 
-print (nombres[0])
-print (nombres[1])
-print (nombres[3])
-print (nombres[-1])
-print (nombres[-2])
-
+print (nombres)
 print (nombres[0:2]) # solo muesta el indice 0, 1 pero no el indice 2 
 # ir del inicio de la lista al indice (sin incluirlo)
 print (nombres[ :3]) # indices a mostrar 0, 1, 2
@@ -47,5 +40,14 @@ nombres.pop()
 print(nombres)
 
 # Eliminar un indice especifico
-del nombres[2]
+del nombres[2] 
+print(nombres)
+
+# eliminar todos los elementos
+
+nombres.clear
+print(nombres)
+
+# elminar la lista
+del nombres
 print(nombres)
