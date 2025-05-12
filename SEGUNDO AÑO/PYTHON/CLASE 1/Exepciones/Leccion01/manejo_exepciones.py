@@ -1,12 +1,9 @@
 from NumerosIgualesExeption import NumerosIgualesExeption
 resultado = None
 
-a = int(input('Digite el primer número: '))
-b = int(input('Digite el segundo número: '))
-if a==b:
-    raise NumerosIgualesExeption('numeros iguales')
-resultado = a / b # modificamos
 try:
+    a = int(input('Digite el primer número: '))
+    b = int(input('Digite el segundo número: '))
     resultado = a/b # modificamos
 except TypeError as e:
     print(f'TypeError - Ocurrio un error: {type(e)}')
@@ -17,6 +14,7 @@ except Exception as e:
 else:
     print('No se arrojo ninguna exepción')
 finally: # siempre se va a ejecutar
+    
     print("Ejecucion de este bloque finally") 
 
 print(f'El resultado es: {resultado}')
